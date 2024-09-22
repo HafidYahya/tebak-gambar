@@ -6,10 +6,6 @@ function cekJawaban() {
   const tebakGambar = document.getElementById("tebakGambar");
 
   if (jawabanInput === jawabanBenar) {
-    // Gantikan gambar yang ditebak dengan GIF
-    tebakGambar.src =
-      "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXlieHF4bTk4OHVjaGF3ZDE4NDEzc3k5bmNwcHJnN2hnZHBtMjZldiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kJYmDQxKEDTs0LsSwM/giphy.gif";
-
     // Tampilkan SweetAlert ketika jawaban benar
     Swal.fire({
       icon: "success",
@@ -17,6 +13,9 @@ function cekJawaban() {
       text: "Jawaban kamu benar!",
       confirmButtonText: "OK",
     }).then(() => {
+      // Gantikan gambar yang ditebak dengan GIF
+      tebakGambar.src =
+        "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXlieHF4bTk4OHVjaGF3ZDE4NDEzc3k5bmNwcHJnN2hnZHBtMjZldiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kJYmDQxKEDTs0LsSwM/giphy.gif";
       // Mulai memutar musik setelah SweetAlert OK ditekan
       audio.play();
 
