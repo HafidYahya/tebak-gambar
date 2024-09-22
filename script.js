@@ -41,7 +41,7 @@ function cekJawaban() {
     // Hentikan musik dan kembalikan gambar ke gambar awal
     audio.pause();
     audio.currentTime = 0;
-    tebakGambar.src = "img/tebak1.png";
+    tebakGambar.src = "img/tebak-gambar.jpg";
     runText.style.display = "none";
   }
 }
